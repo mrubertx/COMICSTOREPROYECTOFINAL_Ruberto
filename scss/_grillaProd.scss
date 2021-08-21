@@ -1,0 +1,91 @@
+/* GRIDS PRODUCTOS */
+
+$color-primario: #765BD5;
+$color-secundario: #e759eb;
+$color-terciario: #B8E7EA;
+
+.grillaProd{
+    display: grid;
+    grid-template-areas: 
+    "imagen  nombreProducto "/* 3 fila */
+    "imagen        precio"/* 4 fila */
+    "imagen         cuotas"/* 5 fila */
+    "imagen    mediosPago"/* 6 fila */
+    "imagen   descripcion"/* 7 fila */
+    "imagen       carrito"/* 8 fila */
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:0fr 0fr 0fr 0fr 2fr 0fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 15px;
+}
+#nombreProducto{
+    grid-area: nombreProducto;
+    color: $color-secundario;
+    font-size: 1rem;
+    margin-top: 5%;
+    margin-right: 25%;
+}
+#precio{
+    grid-area: precio;
+    background-color: $color-secundario;
+    color: black;
+    font-size: 3rem;
+    padding: 5px;
+    margin-right: 85%;
+    text-align: center;
+}
+#cuotas{
+    grid-area: cuotas;
+    background-color: $color-terciario;
+    color: black;
+    padding: 5px;
+    margin-right: 60%;
+    text-align: center;
+}
+#mediosPago{
+    grid-area: mediosPago;
+    background-color: $color-secundario;
+    border: solid 1px  black;
+    color: black;
+    padding: 5px;
+    margin-right: 80%;
+    text-align: center;
+}
+#descripcion{
+    grid-area: descripcion;
+    background-color: $color-terciario;
+    color: black;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-right: 25%;
+    text-align: left;
+}
+#carrito{
+    grid-area: carrito;
+    background-color: $color-secundario;
+    color: black;
+    border: solid 1px black;
+    font-size: 2rem;
+    padding: 5px;
+    margin-bottom: 5%;
+    margin-right: 25%;
+    text-align: center;
+}
+aside{
+    grid-area: imagen;
+}
+aside img{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/* ESTILOS ELEMENTOS */
+.ocultar{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

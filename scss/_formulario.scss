@@ -1,0 +1,25 @@
+/* FORMULARIO DE CONTACTOS */
+$color-primario: #765BD5;
+$color-secundario: #e759eb;
+$color-terciario: #B8E7EA;
+
+form{
+    div{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+.col-sm-11{
+    padding-left: 45%;
+    padding-right: 50%;
+    padding-bottom: 5%;
+}
+
+.btn-primary{
+    background-color: $color-secundario;
+    color: black;
+}
+.btn-primary:hover{
+    color: black;
+    background-color: $color-secundario;
+}

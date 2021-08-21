@@ -1,0 +1,133 @@
+/* RESETEO CSS */
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "carrousel";
+@import "formulario";
+@import "menu";
+@import "grillaProd";
+
+$color-primario: #765BD5;
+$color-secundario: #e759eb;
+$color-terciario: #B8E7EA;
+
+body{
+    background-color: $color-primario;
+    font-family: "Oswald", sans-serif;
+}
+/* CONTENIDO */
+.productos{
+    list-style-type: none;
+}
+.productos__img{
+    width: 200px;
+    height: 300px;
+    border-radius: 1px;
+    border: solid 1px black;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.productos__li{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+div{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    h2{
+        background-color: $color-secundario;
+        color: black;
+        text-align: center;
+        margin-bottom: 2%;
+        padding: 0;
+        font-size: 3em;  
+    }
+}
+ul{
+    list-style: none;
+    padding-left: 0%;
+    li{
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        p{
+            text-align: center;
+            background-color: $color-secundario;
+            margin-left: 10%;
+            margin-bottom: 5%;
+            padding: 1%;
+        }
+        p:hover{
+            color: $color-primario;
+        }
+    }
+}
+/* FOOTER */ 
+.grillaAreas{
+    display: grid;
+    grid-template-areas: 
+    "pie pie pie"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10%;
+    grid-row-gap: 0px;
+}
+.footer{
+    grid-area: pie;
+    background-image: linear-gradient(320deg,  $color-secundario 0%, $color-terciario 20%);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.footerRow1{
+    display: flex;
+    img{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 15%;
+    }
+}
+.footerRow2{
+    display: flex;
+    img{
+        padding-top: 5%;
+        padding-bottom: 9%;
+        width: 15%;
+    }
+}
+.footer__div{
+    margin-left: 25%;
+    margin-right: 75%;
+}
+.footer__h4{
+    font-size: 18px;
+    background-color: $color-secundario;
+    color: black;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.footer__a{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    text-align: center;
+    padding: 2%;
+}
+.footer__a:hover{
+    color: $color-secundario;
+}
+@import "media";
